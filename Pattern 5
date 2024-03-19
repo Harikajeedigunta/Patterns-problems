@@ -1,0 +1,69 @@
+CPP Code:
+Method 1:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i=n;i>=0;i--)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+}
+Method 2:
+#include<iostream>
+using namespace std;
+void print5()
+{
+    int n; #n=5
+    cin>>n;
+    for(int i=n;i>=0;i--)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+}
+int main()
+{
+    print5();
+}
+Output:
+5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+Python Code:
+Method 1:
+n=int(input())
+for i in range(n,0,-1):
+    for j in range(0,i):
+        print("*",end=" ")
+    print("\n")
+
+Method 2:
+def print5():
+    n=int(input())
+    for i in range(n,0,-1):
+        for j in range(0,i):
+            print("* ",end=" ")
+        print("\n")
+print5()
+Output:
+5
+*  *  *  *  *  
+*  *  *  *  
+*  *  *  
+*  *  
+* 
+
