@@ -1,0 +1,71 @@
+CPP Code:
+Method 1:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i=n;i>=1;i--)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+Method 2:
+#include<bits/stdc++.h>
+using namespace std;
+void print6()
+{
+    int n;
+    cin>>n;
+    for(int i=n;i>=0;i--)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+    }
+}
+int main()
+{
+    print6();
+}
+Output:
+5
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1 
+
+Python Code:
+Method 1:
+n=int(input())
+for i in range(n,0,-1):
+    for j in range(0,i):
+        print(i,end=' ')
+    print("\n")
+
+Method 2:
+def print6():
+    n=int(input())
+    for i in range(n,0,-1):
+        for j in range(0,i):
+            print(i,end=" ")
+        print("\n")
+print6()
+
+Output:
+5
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1 
+
